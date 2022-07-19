@@ -6,7 +6,7 @@ var ties = 0;
 var playGame = function () {
 
     var userChoice = prompt(["R", " P", " S"]);
-
+//This will close out the game error free if the user selects cancel
     if (!userChoice) {
         return;
     }
@@ -67,7 +67,7 @@ var playGame = function () {
     alert("Stats" + "\nWins: " + wins + "\nLosses: " + losses + "\nTies: " + ties);
 
     //This will ask the player if they want to play again
-    var playAgain = confirm("play again?");
+    var playAgain = confirm("Play Again?");
 
     if (playAgain) {
         playGame()
